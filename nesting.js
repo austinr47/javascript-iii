@@ -74,26 +74,22 @@ function removeDuplicates (arr){
     }    
   }return arr
 }
-console.log(removeDuplicates(workplaceAccidents))
-
-
-
-
-
-
 
 
 // === PROBLEM 3 ==========
 
 var cat = {
   name: 'Fluffy',
-  catFriends: [{
+  catFriends: [
+    {
     name: 'Grumpy',
     activities: ['be grumpy', 'eat food']
-  }, {
+  }, 
+  {
     name: 'Lazy Bones',
     activities: ['sleep', 'pre-sleep naps']
-    }]
+    }
+  ]
 }
 
 // Fluffy has two friends, Grumpy and Lazy Bones. 
@@ -102,18 +98,15 @@ var cat = {
 
 // Code here
 
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat['catFriends'][0]['activities'][1];
 
-
-
-
-
+var fluffy2ndFriend = cat['catFriends'][1]['name'];
 
 
 // === PROBLEM 4 ==========
 
-// Below is some information about my car. As you can see, I am not the best driver. I have caused a few accidents. Please update this driving record so that I can feel better about my driving skills.
+// Below is some information about my car. As you can see, I am not the best driver. I have caused a few 
+// accidents. Please update this driving record so that I can feel better about my driving skills.
 
 // 1. Write a function called recordCleaner.
 // 2. Loop over the accidents array.
@@ -139,10 +132,15 @@ var myCar = {
     }
   ]
 }
-
 // Code here
+function recordCleaner(arr){
+  for(var prop in myCar.accidents){
+    for(var i = 0; i < myCar['accidents'].length; i++)
+    myCar['accidents'][i]['atFaultForAccident'] = false
+    }return arr
+  }
 
-
+console.log(recordCleaner(myCar))
 
 
 
