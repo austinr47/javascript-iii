@@ -52,6 +52,7 @@ function totalPopulation(obj){
   // CODE HERE
 function ingredients(obg){
   let(carb, fat, protein) = obj
+
 }
 
 // ========================
