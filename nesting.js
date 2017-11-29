@@ -140,14 +140,6 @@ function recordCleaner(arr){
     }return arr
   }
 
-console.log(recordCleaner(myCar))
-
-
-
-
-
-
-
 // === PROBLEM 5 ==========
 
 // Below is an array of arrays. Use two for loops.
@@ -159,6 +151,13 @@ console.log(recordCleaner(myCar))
 
 var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
-
-
-
+function looper(){
+  for(let i = 0; i < numsArr.length; i++){
+    for(let k = 0; k < numsArr[i].length; k++){
+      if(numsArr[i][k] % 2 === 0){
+        numsArr[i][k] = 'even'
+      } else {
+        numsArr[i][k] = 'odd'
+    }}
+  }return numsArr
+}
