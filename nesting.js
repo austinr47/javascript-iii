@@ -31,17 +31,25 @@ var employees = [{
   "department": "Research and Development"
 }]
 
-// Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the array above and perform the following:
+//  Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the 
+//  array above and perform the following:
 //  1. If employee's first name is Theo, remove that employee because he just got fired.
 //  2. If the employee's first name is Lorie, change her department to 'HR'.
 //  3. Return the updated employee array.
 
 // Code here
 
-
-
-
-
+function employeeUpdater(){
+  employees.map(function(element, i, arr) {
+    if (employees[i]['firstName'] === "Theo"){
+      employees.splice(i, 1)
+    } else if (employees[i]['firstName'] === "Lorie"){
+      employees[i]['department'] = 'HR'
+    }
+  
+  })
+  return employees
+}
 
 
 // === PROBLEM 2 ==========
