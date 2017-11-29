@@ -12,16 +12,19 @@ var carDetails = {
 }
 
 // CODE HERE
+let {color, make, model, year} = carDetails
 
 
 // ========================
 
 
-// In the function below named greeting, it is receiving an object as a parameter. Use object destructuring to save the object properties to new variables. The property names are firstName, lastName, and title. Return the concatenated string.
+//  In the function below named greeting, it is receiving an object as a parameter. Use object 
+//  destructuring to save the object properties to new variables. The property names are firstName, 
+//  lastName, and title. Return the concatenated string.
 
 function greeting( obj ) {
   // CODE HERE
-  
+  let {title, firstName, lastName} = obj
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
 }
 
@@ -29,18 +32,27 @@ function greeting( obj ) {
 // ========================
 
 
-// Write a function called totalPopulation that will take in an object. That object will have 4 properties named utah, california, texas and arizona. The property values will be numbers. Use object destructuring to save the property values to new variables. Sum up the values and return the total number.
+// Write a function called totalPopulation that will take in an object. That object will have 4 properties 
+//named utah, california, texas and arizona. The property values will be numbers. Use object destructuring 
+//to save the property values to new variables. Sum up the values and return the total number.
 
   // CODE HERE
+function totalPopulation(obj){
+  let {utah, california, texas, arizona} = obj
 
+}
 
 // ========================
 
 
-// Write a function called ingredients that will take in an object. This object will have 3 properties named carb, fat, and protein. The property values will be strings. Use object destructuring to save the property values to new variables. Push these new variables to an array and return the array. 
+// Write a function called ingredients that will take in an object. This object will have 3 properties named 
+//carb, fat, and protein. The property values will be strings. Use object destructuring to save the property
+// values to new variables. Push these new variables to an array and return the array. 
 
   // CODE HERE
-
+function ingredients(obg){
+  let(carb, fat, protein) = obj
+}
 
 // ========================
 
