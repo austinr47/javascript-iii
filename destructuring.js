@@ -55,8 +55,7 @@ function ingredients(obj){
   var newArr = []
   let{carb, fat, protein} = obj
   newArr.push(carb, fat, protein)
-
-console.log(newArr)
+  return newArr
 }
 // ========================
 // Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration. See the example below:
