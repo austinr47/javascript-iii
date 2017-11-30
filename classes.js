@@ -32,6 +32,7 @@ class Employee {
     makeWidget() {
         return (this.first_name + ' ' + this.last_name + ' Widget')
     }
+    
 }
 /*
 
