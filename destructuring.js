@@ -39,7 +39,7 @@ function greeting( obj ) {
   // CODE HERE
 function totalPopulation(obj){
   let {utah, california, texas, arizona} = obj
-
+  return utah + california + texas + arizona
 }
 
 // ========================
@@ -50,14 +50,15 @@ function totalPopulation(obj){
 // values to new variables. Push these new variables to an array and return the array. 
 
   // CODE HERE
-function ingredients(obg){
-  let(carb, fat, protein) = obj
+  
+function ingredients(obj){
+  var newArr = []
+  let{carb, fat, protein} = obj
+  newArr.push(carb, fat, protein)
 
+console.log(newArr)
 }
-
 // ========================
-
-
 // Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration. See the example below:
 
 // function example( {one, two, three} ) {
