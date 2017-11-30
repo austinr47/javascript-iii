@@ -58,20 +58,42 @@ function ingredients(obj){
   return newArr
 }
 // ========================
-// Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration. See the example below:
+// Now we will use object destructuring as the function's parameter instead of destructuring the object 
+//inside of the function declaration. See the example below:
 
 // function example( {one, two, three} ) {
 //   return one + two + three
 // }
 
-// Write a function called largeNumbers that will take a destructured object as it's parameter. The object properties will be named first, second, and third and their values will be numbers. Find the smallest number of the three and return that number.
+// Write a function called largeNumbers that will take a destructured object as it's parameter. The object 
+//properties will be named first, second, and third and their values will be numbers. Find the smallest 
+//number of the three and return that number.
 
   // CODE HERE
-
+function largeNumbers( {first, second, third} ) {
+  if(first < second && third){
+    return first
+  } else if (second < first && third) {
+    return second
+  } else return third
+}
 
 // ========================
 
 
-// Write a function called numberGroups that will take a destructured object as it's parameter. The object properties will be named a, b, and c and their values will be arrays of numbers. Find the longest array and return that array. 
+// Write a function called numberGroups that will take a destructured object as it's parameter. The object 
+//properties will be named a, b, and c and their values will be arrays of numbers. Find the longest array 
+//and return that array. 
 
   // CODE HERE
+
+function numberGroups ( {a, b, c} ) {
+  if(b.length > a.length && c.length){
+    return b
+  } else if (b.length > a.length && c.length) {
+    return b
+  } else return c
+}
+
+
+
